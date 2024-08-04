@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+*,
+::before,
+::after{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.first-view {
+  height: calc(100vh-110px);
+  background-image: url(../images/index/bg-main.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-self: center;
+}
+
+.first-view-text{
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-bottom: 80px;
+  color: cadetblue;
+  font-weight:bold ;
+  text-shadow: 1px 1px 10px #000000;
+}
+
+.first-view-text h1 {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+.first-view-text p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.lead {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.lead p {
+  line-height: 2;
+  text-align: center;
+}
+
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-button {
+  background-color: blueviolet;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+}
+
+.link-button:hover {
+  background-color: darkviolet;
+}
+
+.past-performance {
+  background-color:  cadetblue;;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.past-performance h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+.past-performance h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.performance-list {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  overflow: scroll;
+
+}
+
+.performance-list li {
+  flex-shrink: 0;
+  width: 260px;
+  margin-left: 75px;
+}
+
+.performance-list li:first-child {
+  margin-left: 0;
+}
+
+.performance-list dl {
+  margin-top: 20px;
+}
+
+.performance-list dt {
+  font-weight: bold;
+}
+
+.performance-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
