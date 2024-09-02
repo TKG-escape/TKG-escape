@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+*,
+::before,
+::after{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title{
+  height: 310px;
+  background-image: url(../images/concept/staff.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+.feature{
+  display: flex;
+  justify-content: space-between;
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.feature img {
+ width: 450px;
+ height: 200px;
+}
+
+.feature-text {
+  max-width: 450px;
+  margin-right: 40px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse .feature-text{
+  margin-left: 40px;
+  margin: 0;
+}
+
+.feature-text h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+  background-color:darkcyan;
+  width: 80%;
+  text-align: center;
+}
+  
+
+.feature-text p {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-top: 25px;
+}
+
+
+@media (max-width: 800px){
+  .feature {
+    display: block;
+    width: 500px;
+    margin-top: 45px;
+  }
+
+  .feature-text {
+    margin-right: 0;
+  }
+
+  .picture {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+  }
+}
