@@ -42,6 +42,9 @@ img{
   align-items: center;
 }
 
+.toggle-menu-button{
+  display: none;
+}
 
 
 .header-logo{
@@ -94,6 +97,7 @@ img{
 }
 
 @media (max-width: 800px){
+
   .site-menu ul {
     display: block;
     text-align: center;
@@ -138,8 +142,9 @@ img{
   }
 
   .header-site-menu.is-show {
-    display: block;
+    display:block;
   }
+
 
   .toggle-menu-button {
     display: block;
@@ -151,9 +156,12 @@ img{
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
-    border-radius: 0%;
+    border-radius: 0;
     outline: none;
   }
+ 
+  .
+
 
   .main {
     padding-top: 50px;
